@@ -28,12 +28,12 @@ function submit_yoomoney(paymentType) {
 }
 
 
-function create_UUID(){
+function create_UUID() {
     var dt = new Date().getTime();
-    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-        var r = (dt + Math.random()*16)%16 | 0;
-        dt = Math.floor(dt/16);
-        return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = (dt + Math.random() * 16) % 16 | 0;
+        dt = Math.floor(dt / 16);
+        return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
     return uuid;
 }
@@ -52,8 +52,40 @@ function submit_qiwi() {
     qiwi_form.submit()
 }
 
+function updatePaymentSum() {
+    let payment_sum_input = $('.payment_sum_input');
+    let coin_count_input = $('.coin_count_input')
+    let promo_input = $('.promo_input');
+
+
+    let promo_code = promo_input.val()
+    let coin_count = parseInt(coin_count_input.val())
+    $.get("https://letsplaycastleclash.com/promo/" + encodeURIComponent(promo_code), function (data) {
+    }).always(function (data) {
+        var paymentSum = coin_count
+        if ('sale' in data) {
+            paymentSum = coin_count - Math.floor(coin_count * data["sale"] / 100.0)
+        }
+        payment_sum_input.val(paymentSum)
+    })
+}
+
 $(document).ready(function () {
     scrollToTargetAdjusted();
+    let promo_input = $('.promo_input');
+    let coin_count_input = $('.coin_count_input');
+    let payment_sum_input = $('.payment_sum_input');
+    let coin_count = parseInt(coin_count_input.val());
+    payment_sum_input.val(coin_count);
+
+    promo_input.on('input', function (e) {
+        updatePaymentSum();
+    });
+
+    coin_count_input.on('input', function (e) {
+        updatePaymentSum();
+    });
+
     $('.btn-complete').click((e) => {
         if ($('#bank-card').is(':checked'))
             submit_yoomoney('AC')
