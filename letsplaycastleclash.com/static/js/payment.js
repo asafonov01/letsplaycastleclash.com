@@ -20,6 +20,7 @@ function submit_yoomoney(paymentType) {
     let yoomoney_form = $('.yoomoney_form')
     yoomoney_form.find('input[name="formcomment"]').val(comment)
     yoomoney_form.find('input[name="short-dest"]').val(comment)
+    yoomoney_form.find('input[name="targets"]').val(comment)
     yoomoney_form.find('input[name="label"]').val(comment)
     yoomoney_form.find('input[name="comment"]').val(comment)
     yoomoney_form.find('input[name="paymentType"]').val(paymentType)
