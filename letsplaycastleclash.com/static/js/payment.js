@@ -89,6 +89,7 @@ $(document).ready(function () {
     let payment_sum_input = $('.payment_sum_input');
     let coin_count = parseInt(coin_count_input.val());
     payment_sum_input.val(coin_count);
+    window.paymentSum = coin_count
 
     promo_input.on('input', function (e) {
         updatePaymentSum();
