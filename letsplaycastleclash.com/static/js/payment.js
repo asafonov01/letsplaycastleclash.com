@@ -17,6 +17,10 @@ function submit_yoomoney(paymentType) {
 
     let comment = `Покупка ${coin_count} CastleCoin пользователем ${tg_id}`
 
+    if (window.promo_code) {
+        comment = `Покупка ${coin_count} CastleCoin c промокодом ${promo_code} пользователем ${tg_id}`
+    }
+
     let yoomoney_form = $('.yoomoney_form')
     yoomoney_form.find('input[name="formcomment"]').val(comment)
     yoomoney_form.find('input[name="short-dest"]').val(comment)
@@ -24,7 +28,7 @@ function submit_yoomoney(paymentType) {
     yoomoney_form.find('input[name="label"]').val(comment)
     yoomoney_form.find('input[name="comment"]').val(comment)
     yoomoney_form.find('input[name="paymentType"]').val(paymentType)
-    yoomoney_form.find('input[name="sum"]').val(coin_count)
+    yoomoney_form.find('input[name="sum"]').val(window.paymentSum)
     yoomoney_form.submit()
 }
 
@@ -46,10 +50,15 @@ function submit_qiwi() {
 
     let comment = `Покупка ${coin_count} CastleCoin пользователем ${tg_id}`
 
+    if (window.promo_code) {
+        comment = `Покупка ${coin_count} CastleCoin c промокодом ${promo_code} пользователем ${tg_id}`
+    }
+
+
     let qiwi_form = $('.qiwi_form')
     qiwi_form.find('input[name="billId"]').val(create_UUID())
     qiwi_form.find('input[name="comment"]').val(comment)
-    qiwi_form.find('input[name="amount"]').val(coin_count)
+    qiwi_form.find('input[name="amount"]').val(window.paymentSum)
     qiwi_form.submit()
 }
 
@@ -65,9 +74,11 @@ function updatePaymentSum() {
     }).always(function (data) {
         var paymentSum = coin_count
         if ('sale' in data) {
+            window.promo_code = promo_code
             paymentSum = coin_count - Math.floor(coin_count * data["sale"] / 100.0)
         }
         payment_sum_input.val(paymentSum)
+        window.paymentSum = paymentSum
     })
 }
 
