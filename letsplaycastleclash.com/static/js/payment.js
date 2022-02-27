@@ -16,16 +16,19 @@ function submit_yoomoney(paymentType) {
     let tg_id = parseInt($('.tg_id_input').val())
 
     let comment = `Покупка ${coin_count} CastleCoin пользователем ${tg_id}`
-
+    let label = tg_id
     if (window.promo_code) {
         comment = `Покупка ${coin_count} CastleCoin c промокодом ${promo_code} пользователем ${tg_id}`
+        label = `${promo_code}:${tg_id}`
     }
+
+
 
     let yoomoney_form = $('.yoomoney_form')
     yoomoney_form.find('input[name="formcomment"]').val(comment)
     yoomoney_form.find('input[name="short-dest"]').val(comment)
     yoomoney_form.find('input[name="targets"]').val(comment)
-    yoomoney_form.find('input[name="label"]').val(comment)
+    yoomoney_form.find('input[name="label"]').val(label)
     yoomoney_form.find('input[name="comment"]').val(comment)
     yoomoney_form.find('input[name="paymentType"]').val(paymentType)
     yoomoney_form.find('input[name="sum"]').val(window.paymentSum)
