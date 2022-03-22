@@ -23,7 +23,6 @@ function submit_yoomoney(paymentType) {
     }
 
 
-
     let yoomoney_form = $('.yoomoney_form')
     yoomoney_form.find('input[name="formcomment"]').val(comment)
     yoomoney_form.find('input[name="short-dest"]').val(comment)
@@ -64,6 +63,22 @@ function submit_qiwi() {
     qiwi_form.find('input[name="amount"]').val(window.paymentSum)
     qiwi_form.submit()
 }
+
+
+function submit_monobank() {
+    let coin_count = parseInt($('.coin_count_input').val())
+    let tg_id = parseInt($('.tg_id_input').val())
+
+    let comment = `Покупка ${coin_count} CastleCoin пользователем ${tg_id}`
+
+    if (window.promo_code) {
+        comment = `Покупка ${coin_count} CastleCoin c промокодом ${promo_code} пользователем ${tg_id}`
+    }
+
+    window.location.replace(`https://mbnk.app/pay/4hXhxGpJrw?a=${window.paymentSum}&t=${encodeURIComponent(comment)}`);
+
+}
+
 
 function updatePaymentSum() {
     let payment_sum_input = $('.payment_sum_input');
@@ -108,6 +123,10 @@ $(document).ready(function () {
 
         if ($('#qiwi').is(':checked'))
             submit_qiwi()
+
+        if ($('#monobank').is(':checked'))
+            submit_monobank()
+
 
         if ($('#u-money').is(':checked'))
             submit_yoomoney('PC')
