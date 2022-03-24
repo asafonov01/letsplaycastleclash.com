@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-03-24 19:26+0000\n"
+"POT-Creation-Date: 2022-03-24 19:48+0000\n"
 "PO-Revision-Date: 2022-03-23 16:58+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -26,7 +26,9 @@ msgstr "Guides & Fast active question answers"
 msgid ""
 "Выберите ниже инструкцию по пользованию бота и/или ответы на часто "
 "задаваемые вопросы к руководстве бота."
-msgstr "Select below the instructions for using the bot and / or answers to frequently asked questions for the bot manual."
+msgstr ""
+"Select below the instructions for using the bot and / or answers to "
+"frequently asked questions for the bot manual."
 
 #: letsplaycastleclash.com/templates/faq.jinja2:32
 #: letsplaycastleclash.com/templates/faq.jinja2:42
@@ -498,16 +500,22 @@ msgid ""
 "Конфиденциальности</a> и <a href=\"./privacy\" class=\"primary\">Условия "
 "Предоставления Услуг</a>."
 msgstr ""
-"Be sure to read <a href=\"./policy\" class=\"primary\">Privacy Policy</a> and <a href=\"./privacy\" class=\"primary\">Terms of Service</a>."
+"Be sure to read <a href=\"./policy\" class=\"primary\">Privacy Policy</a>"
+" and <a href=\"./privacy\" class=\"primary\">Terms of Service</a>."
 
 #: letsplaycastleclash.com/templates/faq.jinja2:611
 msgid "У нас происходит волшебство, и игрок получает Награду на свой аккаунт."
-msgstr "We have magic happening, and the player receives the Reward on his account."
+msgstr ""
+"We have magic happening, and the player receives the Reward on his "
+"account."
 
 #: letsplaycastleclash.com/templates/faq.jinja2:614
 msgid ""
-"Ваша игровая учетная запись не может быть заблокирована, поскольку не нарушает TOS игры."
-msgstr "Your game account cannot be banned because it does not violate the TOS of the game."
+"Ваша игровая учетная запись не может быть заблокирована, поскольку не "
+"нарушает TOS игры."
+msgstr ""
+"Your game account cannot be banned because it does not violate the TOS of"
+" the game."
 
 #: letsplaycastleclash.com/templates/index.jinja2:13
 msgid " Бот по Castle Clash - для тех, <br> кто ценит своё время. "
@@ -625,6 +633,14 @@ msgstr ""
 "By joining our community, you will receive the latest information with "
 "insiders and freebies on Castle Clash"
 
+#: letsplaycastleclash.com/templates/index.jinja2:155
+msgid "Канал"
+msgstr "Channel"
+
+#: letsplaycastleclash.com/templates/index.jinja2:159
+msgid "Группа"
+msgstr "Group"
+
 #: letsplaycastleclash.com/templates/index.jinja2:165
 msgid "СТАТИСТИКА"
 msgstr "STATISTICS"
@@ -648,8 +664,8 @@ msgid "10к+ <br> подписчиков"
 msgstr "10k+ <br> subscribers"
 
 #: letsplaycastleclash.com/templates/index.jinja2:197
-#: letsplaycastleclash.com/templates/template.jinja2:59
-#: letsplaycastleclash.com/templates/template.jinja2:103
+#: letsplaycastleclash.com/templates/template.jinja2:71
+#: letsplaycastleclash.com/templates/template.jinja2:117
 msgid "Прейскурант"
 msgstr "Price"
 
@@ -680,8 +696,8 @@ msgid "попытки не сгорают"
 msgstr "attempts do not disappear"
 
 #: letsplaycastleclash.com/templates/index.jinja2:262
-#: letsplaycastleclash.com/templates/template.jinja2:65
-#: letsplaycastleclash.com/templates/template.jinja2:104
+#: letsplaycastleclash.com/templates/template.jinja2:77
+#: letsplaycastleclash.com/templates/template.jinja2:118
 msgid "Команда"
 msgstr "Team"
 
@@ -943,42 +959,42 @@ msgid ""
 "Clash."
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:19
+#: letsplaycastleclash.com/templates/template.jinja2:25
 msgid "Клуб игроков Castle Clash | Главная"
 msgstr "Castle Clash Players Club | Home"
 
-#: letsplaycastleclash.com/templates/template.jinja2:47
-#: letsplaycastleclash.com/templates/template.jinja2:101
+#: letsplaycastleclash.com/templates/template.jinja2:59
+#: letsplaycastleclash.com/templates/template.jinja2:115
 msgid "Главная"
 msgstr "Home"
 
-#: letsplaycastleclash.com/templates/template.jinja2:53
-#: letsplaycastleclash.com/templates/template.jinja2:102
+#: letsplaycastleclash.com/templates/template.jinja2:65
+#: letsplaycastleclash.com/templates/template.jinja2:116
 msgid "Функции"
 msgstr "Capabilities"
 
-#: letsplaycastleclash.com/templates/template.jinja2:71
-#: letsplaycastleclash.com/templates/template.jinja2:106
+#: letsplaycastleclash.com/templates/template.jinja2:83
+#: letsplaycastleclash.com/templates/template.jinja2:120
 msgid "FAQ"
 msgstr "FAQ"
 
-#: letsplaycastleclash.com/templates/template.jinja2:144
+#: letsplaycastleclash.com/templates/template.jinja2:164
 msgid "Политика"
 msgstr "Policy"
 
-#: letsplaycastleclash.com/templates/template.jinja2:145
+#: letsplaycastleclash.com/templates/template.jinja2:165
 msgid "Условия"
 msgstr "Terms"
 
-#: letsplaycastleclash.com/templates/template.jinja2:165
+#: letsplaycastleclash.com/templates/template.jinja2:185
 msgid "Товарный знак"
 msgstr "Trademark"
 
-#: letsplaycastleclash.com/templates/template.jinja2:167
+#: letsplaycastleclash.com/templates/template.jinja2:187
 msgid "принадлежит"
 msgstr "belongs to"
 
-#: letsplaycastleclash.com/templates/template.jinja2:169
+#: letsplaycastleclash.com/templates/template.jinja2:189
 msgid "© 2022, Все права защищены."
 msgstr "© 2022, All rights reserved."
 
