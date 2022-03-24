@@ -396,7 +396,7 @@ msgstr "Sent the code to the bot, but the Rewards do not come"
 
 #: letsplaycastleclash.com/templates/faq.jinja2:508
 msgid "10 Дней призов"
-msgstr "Big Bargainer"
+msgstr "10-Day Bonanza"
 
 #: letsplaycastleclash.com/templates/faq.jinja2:520
 msgid "Хочу кинуть ссылку боту, но я боюсь за свои игровой аккаунт"
