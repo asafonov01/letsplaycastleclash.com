@@ -16,3 +16,23 @@ services:
       - "8055:8055"
 
     command: python3 main.py
+
+  add_lang:
+    build: .
+    volumes:
+      - .:/letsplaycastleclash
+    command: bash -c "pybabel init -i locales/letsplaycastleclash.pot -d locales -D messages -l en"
+
+
+  collect_strings:
+    build: .
+    volumes:
+      - .:/letsplaycastleclash
+    command: bash -c "pybabel extract -F babel.cfg --input-dirs=. -k __ -o locales/letsplaycastleclash.pot && pybabel update -d locales -D messages -i locales/letsplaycastleclash.pot"
+
+  compile_strings:
+    build: .
+    volumes:
+      - .:/letsplaycastleclash
+    command: pybabel compile -d locales -D messages
+

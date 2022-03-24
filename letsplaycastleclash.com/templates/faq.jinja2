@@ -1,0 +1,689 @@
+{% extends 'template.jinja2' %}
+{% block content %}
+<main class="faq-page">
+
+    <section class="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-6">
+                    <div class="img">
+                        <img src="../static/src/hero.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-6">
+                    <div class="title text-right">Инструкция & Ответы на часто задаваемые вопросы</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-guide">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 col-12 mb-4">
+                    <p>Выберите ниже инструкцию по пользованию бота и/или ответы на часто задаваемые вопросы к
+                        руководстве бота.</p>
+                </div>
+
+                <div class="col-12">
+                    <ul class="legend">
+                        <li class="mb-5"><span>1</span><a href="#instruction">Инструкция</a></li>
+                        <li class="mb-5"><span>2</span><a href="#answer">Ответы на часто задаваемые вопросы</a></li>
+                        <li class="mb-5"><span>3</span><a href="#other">Другое</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center" id="instruction">
+                <div class="col-12 text-center">
+                    <div class="title">Инструкция</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="faq-instruction">
+
+                        <div class="accordion" id="accordionInstruction">
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                                aria-controls="collapseOne">
+                                            <span class="number">#1</span>
+                                            <span class="name">Начало работы</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                     data-parent="#accordionInstruction">
+                                    <div class="card-body">
+                                        <ol class="ml-8 mb-8">
+                                            <li>
+                                                Напишите в <a href="https://t.me/cc_puzzle_bot" class="primary">личные
+                                                сообщения</a> команду <code>/start</code> (кнопка «Запустить»). Появится
+                                                клавиатура <img src="../static/src/Commands1.svg"> с множеством функций.
+                                            </li>
+                                            <br>
+                                            <li>
+                                                Telegram ID - ваш уникальный ID аккаунта в Telegram, который
+                                                присваивается при регистрации.
+                                            </li>
+                                            <br>
+                                            <li>
+                                                Баланс CastleCoin. CastleCoin - валюта бота. Можно принимать участие в
+                                                событиях игры, которые доступные в боте:
+                                                Загадочный Пазл и Возвращение Домой. Детально с платными услугами можно
+                                                ознакомиться на этой <a href="index#price" class="primary">странице</a>.
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                            <span class="number">#2</span>
+                                            <span class="name">Покупка; промокод; возврат средств</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                     data-parent="#accordionInstruction">
+                                    <div class="card-body">
+                                        <ol class="ml-8 mb-8">
+
+                                            <div>
+                                                <span class="number">#2.1</span>
+                                                <span class="title ml-3">Покупка CastleCoin</span>
+                                            </div>
+
+                                            <ol class="ml-8 mb-8">
+                                                <br>
+                                                <li>
+                                                    Откройте меню <img src="../static/src/Commands1.svg">, кнопка
+                                                    «Купить CastleCoin» >> выберите желаемую сумму для покупки.
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    Можно разными способами пополнить баланс: самостоятельный перевод (с
+                                                    карты на карту), сервис автооплаты ЮMoney и QIWI (доступно для
+                                                    игроков из Российской Федерации), международный платежный сервис <a
+                                                        href="https://t.me/letsplaycastleclash/3255" class="primary">@donate</a>.
+                                                </li>
+                                            </ol>
+                                            <div>
+                                                <span class="number">#2.2</span>
+                                                <span class="title ml-3">Промокод CastleCoin</span>
+                                            </div>
+
+                                            <ol class="ml-8">
+                                                <br>
+                                                <li>
+                                                    В случайные дни запускаем промокод, который дает 20% скидку на
+                                                    покупку CastleCoin. Подписывайтесь на <a
+                                                        href="https://t.me/letsplaycastleclash" class="primary">@letsplaycastleclash</a>,
+                                                    и следите за новостями о запуске промокодов.
+                                                </li>
+                                            </ol>
+                                            <br>
+                                            <div>
+                                                <span class="number">#2.3</span>
+                                                <span class="title ml-3">Возврат средств</span>
+                                            </div>
+                                            <br>
+                                            <div class="ml-8 mb-4">Отменить подписку можно в течение <b>7 дней</b> после
+                                                приобретения тарифа. Свяжитесь с нами через <a
+                                                        href="https://t.me/CCletsplay_bot" class="primary">@CCletsplay_bot</a>,
+                                                предоставив чек, дату оплаты.
+                                            </div>
+                                            <div>
+                                                <span class=" primary ml-8">Примечание:</span>
+                                            </div>
+                                            <ol class="ml-8">
+                                                <li>
+                                                    Возврат возможен только в том случае, если вы не пользовались нашими
+                                                    платными услугами во время действующих Акций.
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    Возврат возможен только на тот счет, откуда производилась оплата.
+                                                </li>
+                                            </ol>
+
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="number">#3</span>
+                                            <span class="name">Возвращение домой</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                     data-parent="#accordionInstruction">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+
+                                                <div>
+                                                    <span class="number">#3.1</span>
+                                                    <span class="title ml-3">Получение бесплатных попыток</span>
+                                                </div>
+                                                <div class="ml-8 mb-4">За неделю до окончания События, игроки могут
+                                                    воспользоваться бесплатными попытками (5/5). Об этом уведомляется
+                                                    заранее
+                                                    на канале <a href="https://t.me/letsplaycastleclash"
+                                                                 class="primary">@letsplaycastleclash</a>.
+                                                </div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        Откройте страницу в игре «Возвращение Домой» >> нажмите и
+                                                        удерживайте код, чтобы скопировать.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <a href="https://t.me/cc_puzzle_bot" class="primary">@cc_puzzle_bot</a>
+                                                        >> меню <img src="../static/src/Commands1.svg"> >> «Возвращение
+                                                        Домой».
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Отправьте ваш код >> "Использовать бесплатные попытки". После
+                                                        успешной обработки бот уведомит вас о завершении.
+                                                    </li>
+                                                </ol>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <div>
+                                                    <span class="number">#3.2</span>
+                                                    <span class="title ml-3">Получение наград</span>
+                                                </div>
+                                                <div class="ml-8 mb-4"><a href="index#price" class="primary">Доступно в
+                                                    платной версии</a></div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        Откройте страницу в игре «Возвращение Домой» >> нажмите и
+                                                        удерживайте код, чтобы скопировать.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <a href="https://t.me/cc_puzzle_bot" class="primary">@cc_puzzle_bot</a>
+                                                        >> меню <img src="../static/src/Commands1.svg"> >> «Возвращение
+                                                        Домой».
+                                                    </li>
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Отправьте код >> Нажмите кнопку 10 или 15, чтобы выбрать число
+                                                        вводов кодов и получить награды >> ожидайте поступление Наград
+                                                        на почту.
+                                                    </li>
+                                                </ol>
+
+                                                <div>
+                                                    <span class=" primary ml-8">Примечание</span>
+                                                </div>
+
+                                                <ol class="ml-8">
+                                                    <li>
+                                                        Почта имеет ограничение в 60 слотов, своевременно забирайте
+                                                        награду после первого ввода кода.
+                                                        CastleCoin не будут возмещены на баланс, в случае утери Наград.
+                                                    </li>
+                                                </ol>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                            <span class="number">#4</span>
+                                            <span class="name">Загадочный пазл</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                     data-parent="#accordionInstruction">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+
+                                            <li>
+                                                <div class="ml-8 mb-4"><a href="index#price" class="primary">Доступно в
+                                                    платной версии</a></div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        Меню <img src="../static/src/Commands1.svg"> >> «Загадочный
+                                                        пазл».
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Нажмите «Активировать доступ Загадочного Пазла» >> «Подтвердить
+                                                        покупку».
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Отлично! Теперь у вас активирован Загадочный Пазл. Приятного
+                                                        пользования.
+                                                    </li>
+                                                </ol>
+
+                                                <div>
+                                                    <span class=" primary ml-8">Примечание</span>
+                                                </div>
+
+                                                <ol class="ml-8">
+                                                    <li>
+                                                        На один игровой аккаунт можно взять до 30 Фрагментов за одну
+                                                        акцию по правилам События.
+                                                    </li>
+                                                </ol>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingFive">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                                aria-controls="collapseFive">
+                                            <span class="number">#5</span>
+                                            <span class="name">Великий торговец</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                     data-parent="#accordionInstruction">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+                                                <ol class="ml-8 mb-8">
+                                                    <li>
+                                                        Откройте страницу в игре «Великий торговец» >> скопируйте код
+                                                        предмета.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <a href="https://t.me/cc_puzzle_bot" class="primary">@cc_puzzle_bot</a>
+                                                        >> меню <img src="../static/src/Commands1.svg"> >> «Великий
+                                                        торговец».
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Отправьте код предмета, и ожидайте уведомление об обработки
+                                                        кода. Обработка одного кода займет не более 1 минуты. Возможны
+                                                        задержки, из-за очереди.
+                                                    </li>
+                                                </ol>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingSix">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                                aria-controls="collapseSix">
+                                            <span class="number">#6</span>
+                                            <span class="name">10 дней призов</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                     data-parent="#accordionInstruction">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+                                                <ol class="ml-8 mb-8">
+                                                    <li>
+                                                        Откройте любого Героя в Алтаре Героев >> под Героем синяя кнопка
+                                                        «Рекомендация», нажмите.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Вас перенаправит на страницу браузера. Из строки скопируйте
+                                                        ссылку.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <a href="https://t.me/cc_puzzle_bot" class="primary">@cc_puzzle_bot</a>
+                                                        >> меню <img src="../static/src/Commands1.svg"> >> «10 Дней
+                                                        Призов» >> отправьте ссылку боту.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Отлично! Ваша ссылка добавлена.
+                                                    </li>
+                                                </ol>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="answer">
+                <div class="col-12 text-center">
+                    <div class="title">Ответы</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="faq-instruction">
+
+                        <div class="accordion" id="accordionAnswer">
+
+
+                            <div class="card">
+                                <div class="card-header" id="answeringOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseOneAnswer"
+                                                aria-expanded="true" aria-controls="collapseOneAnswer">
+                                            <span class="number">#1</span>
+                                            <span class="name">Возвращение Домой</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOneAnswer" class="collapse" aria-labelledby="answeringOne"
+                                     data-parent="#accordionAnswer">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+
+                                                <div>
+                                                    <span class="title ml-3">Попытки списались после отправки кода, а Награды не поступили на почту</span>
+                                                </div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        <b>Неправильный код:</b> Правильный код состоит из 8 символов,
+                                                        написан на английском языке и содержит символы 0-9 и A-F,
+                                                        обновляется каждую акцию.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <b>Очередь:</b> каждый код обрабатывается поочередно.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        <b>Сервера IGG:</b> награды приходят с задержкой. Если в
+                                                        "записях" пишет кол-во приглашаемых аккаунтов, а награды
+                                                        не пришли - стоит обратиться в техническую поддержку игры,
+                                                        написав им, чтобы отправили награды.
+                                                    </li>
+                                                </ol>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="answeringTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwoAnswer"
+                                                aria-expanded="false" aria-controls="collapseTwoAnswer">
+                                            <span class="number">#2</span>
+                                            <span class="name">Загадочный Пазл</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwoAnswer" class="collapse" aria-labelledby="answeringTwo"
+                                     data-parent="#accordionAnswer">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+
+                                                <div>
+                                                    <span class="title ml-3">Бот выдает пустые коды</span>
+                                                </div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        <b>Коды закончились:</b> обратитесь в службу поддержки <a
+                                                            href="https://t.me/CCletsplay_bot" class="primary">@CCletsplay_bot</a>,
+                                                        сообщите нам об этом, чтобы мы нафармили их.
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="answeringThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseThreeAnswer"
+                                                aria-expanded="false" aria-controls="collapseThreeAnswer">
+                                            <span class="number">#3</span>
+                                            <span class="name">Великий Торговец</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThreeAnswer" class="collapse" aria-labelledby="answeringThree"
+                                     data-parent="#accordionAnswer">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+
+                                                <div>
+                                                    <span class="title ml-3">Отправил(а) код боту, а Награды не приходят</span>
+                                                </div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        <b>Очередь:</b> каждый код обрабатывается поочередно.
+
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="answeringFour">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseFourAnswer"
+                                                aria-expanded="false" aria-controls="collapseFourAnswer">
+                                            <span class="number">#4</span>
+                                            <span class="name">10 Дней призов</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseFourAnswer" class="collapse" aria-labelledby="answeringFour"
+                                     data-parent="#accordionAnswer">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled ml-5">
+                                            <li>
+
+                                                <div>
+                                                    <span class="title ml-3">Хочу кинуть ссылку боту, но я боюсь за свои игровой аккаунт</span>
+                                                </div>
+                                                <ol class="ml-8 mb-8">
+                                                    <br>
+                                                    <li>
+                                                        Уникальный ключ (signed key) доступен только вам. Этот ключ
+                                                        давать третьим лицам запрещено, кроме нашего бота.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        Сеансы каждого ключа действительны до двух недель, после чего
+                                                        генерируется новый ключ.
+                                                    </li>
+                                                    <br>
+                                                    <li>
+                                                        В первую очередь, мы используем ваш уникальный ключ (signed key)
+                                                        и IGG ID в рамках предоставления услуг.
+                                                        Бот не может ничего сделать на вашем Аккаунте, а также не входит
+                                                        в саму игру.
+                                                        Боту нужен только доступ к Событиям игры, а События никак не
+                                                        связаны с игрой.
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            </li>
+                                            <center><a href="./policy" class="primary">Политика Конфиндециальности</a>
+                                            </center>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="other">
+                <div class="col-12 text-center">
+                    <div class="title">Другое</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div class="faq-instruction">
+
+                        <div class="accordion" id="accordionOther">
+
+                            <div class="card">
+                                <div class="card-header" id="otherOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseOneOther"
+                                                aria-expanded="false" aria-controls="collapseOneOther">
+                                            <span class="number">#1</span>
+                                            <span class="name">Что такое проект Клуб игроков Castle Clash?</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOneOther" class="collapse" aria-labelledby="OtherOne"
+                                     data-parent="#accordionOther">
+                                    <div class="card-body">
+                                        Клуб игроков Castle CLash — ресурс, который рассказывает обо всех новостях,
+                                        инсайдах в мире Castle Clash.
+                                        <br>
+                                        <br>
+                                        Сотрудничали с IGG RU,
+                                        были звеном между игроками и сотрудниками компании. Передавали ошибки об игре,
+                                        предложения и многое другое...
+                                        <br>
+                                        Для этого использовался официальный чат в Telegram вместе с IGG.
+                                        <br>
+                                        <br>
+                                        Летом 2020 года, сообщество было закрыто.
+                                        Спустя некоторое время мы вернулись обратно, в декабре запустили новый проект с
+                                        ботом, чтобы облегчить игрокам,
+                                        участвуя в разных событиях игры.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="otherTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwoOther"
+                                                aria-expanded="false" aria-controls="collapseTwoOther">
+                                            <span class="number">#2</span>
+                                            <span class="name">Безопасно ли использовать бота?</span>
+                                            <span class="indicator"></span>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwoOther" class="collapse" aria-labelledby="OtherTwo"
+                                     data-parent="#accordionOther">
+                                    <div class="card-body">
+                                        Да! Бот абсолютно безопасен. Мы не требуем данных от Вас (Почты Gmail, IGG
+                                        Account и пароли).
+                                        Обязательно прочтите <a href="./policy" class="primary">Политику
+                                        Конфиндециальности</a> и
+                                        <a href="./privacy" class="primary">Условия Предоставления Услуг</a>.
+                                        <br>
+                                        <br>
+                                        У нас происходит волшебство, и игрок получает Награду на свой аккаунт.
+                                        <br>
+                                        <br>
+                                        Ваша игровая учетная запись не может быть заблокирована, поскольку не нарушает
+                                        TOS игры.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}
