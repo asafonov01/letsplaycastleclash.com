@@ -1,205 +1,221 @@
 {% extends 'template.jinja2' %}
-{% block content %}
-<main class="payment-page">
+{% block header %}
+    <script src="../static/js/payment.js"></script>
 
-    <section class="banner">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-6">
-                    <div class="title" id="form">{% trans %}Покупка CastleCoin в @cc_puzzle_bot{% endtrans %}</div>
-                    <div class="desc">{% trans %}Покупайте по выгодной цене наши услуги, все награды поступят на ваш игровой аккаунт{% endtrans %}
+{% endblock %}
+
+{% block content %}
+    <main class="payment-page">
+
+        <section class="banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-6">
+                        <div class="title" id="form">{% trans %}Покупка CastleCoin в @cc_puzzle_bot{% endtrans %}</div>
+                        <div class="desc">{% trans %}Покупайте по выгодной цене наши услуги, все награды поступят на ваш
+                            игровой аккаунт{% endtrans %}
+                        </div>
                     </div>
-                </div>
-                <div class="col-xl-5 col-6">
-                    <div class="img">
-                        <img src="/static/src/Serratica.png" alt="" class="img-fluid">
+                    <div class="col-xl-5 col-6">
+                        <div class="img">
+                            <img src="/static/src/Serratica.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
         <form method="POST" action="https://yoomoney.ru/quickpay/confirm.xml" class="yoomoney_form">
-        <input type="hidden" name="receiver" value="410018111050822"/>
-        <input type="hidden" name="formcomment"/>
-        <input type="hidden" name="short-dest"/>
-        <input type="hidden" name="label"/>
-        <input type="hidden" name="quickpay-form" value="donate"/>
-        <input type="hidden" name="targets"/>
+            <input type="hidden" name="receiver" value="410018111050822"/>
+            <input type="hidden" name="formcomment"/>
+            <input type="hidden" name="short-dest"/>
+            <input type="hidden" name="label"/>
+            <input type="hidden" name="quickpay-form" value="donate"/>
+            <input type="hidden" name="targets"/>
 
-        <input name="sum" type="hidden"/>
-        <input type="hidden" name="comment"/>
+            <input name="sum" type="hidden"/>
+            <input type="hidden" name="comment"/>
 
-        <input type="hidden" name="need-fio" value="false"/>
-        <input type="hidden" name="need-email" value="false"/>
-        <input type="hidden" name="need-phone" value="false"/>
+            <input type="hidden" name="need-fio" value="false"/>
+            <input type="hidden" name="need-email" value="false"/>
+            <input type="hidden" name="need-phone" value="false"/>
 
-        <input type="hidden" name="need-address" value="false"/>
-        <input type="hidden" name="paymentType" value="PC"/>
-    </form>
-
-
-    <form method="GET" action="https://oplata.qiwi.com/create" class="qiwi_form">
-        <input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPyrgptFwjWi3VsS2RgFFofTwoQhe2WUo6GfHDMpA8PtzeCzpQCtGQGaanyDdk1NnzXDueTrEkTPMS2sVcucSRcW2RPtdsfGcPGySrss1cP"/>
-        <input type="hidden" name="billId">
-        <input type="hidden" name="comment"/>
-        <input type="hidden" name="amount"/>
+            <input type="hidden" name="need-address" value="false"/>
+            <input type="hidden" name="paymentType" value="PC"/>
+        </form>
 
 
-    </form>
+        <form method="GET" action="https://oplata.qiwi.com/create" class="qiwi_form">
+            <input type="hidden" name="publicKey"
+                   value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPyrgptFwjWi3VsS2RgFFofTwoQhe2WUo6GfHDMpA8PtzeCzpQCtGQGaanyDdk1NnzXDueTrEkTPMS2sVcucSRcW2RPtdsfGcPGySrss1cP"/>
+            <input type="hidden" name="billId">
+            <input type="hidden" name="comment"/>
+            <input type="hidden" name="amount"/>
 
 
-    <section class="time-line">
-        <div class="container content_box">
-            <div class="row justify-content-center">
+        </form>
 
-                <div class="col-12 text-center">
-                    <div class="title">
-                        <div>{% trans %}При оплате пользователь принимает{% endtrans %}</div>
-                        <div><a href="./policy" class="primary">{% trans %}Политику конфиденциальности</a> и <a href="./privacy"
-                                                                                                     class="primary">Условия
-                            предоставления услуг</a>{% endtrans %}</div>
-                    </div>
-                </div>
 
-                <form class="col-xl-10 col-12 form-coin">
+        <section class="time-line">
+            <div class="container content_box">
+                <div class="row justify-content-center">
 
-                    <div class="row item">
-                        <div class="col-2 d-flex justify-content-end">
-                            <span class="number">1</span>
+                    <div class="col-12 text-center">
+                        <div class="title">
+                            <div>{% trans %}При оплате пользователь принимает{% endtrans %}</div>
+                            <div><a href="./policy" class="primary">{% trans %}Политику конфиденциальности</a> и
+                                <a href="./privacy"
+                                   class="primary">Условия
+                                    предоставления услуг</a>{% endtrans %}</div>
                         </div>
-                        <div class="col-3 d-flex justify-content-end">
+                    </div>
+
+                    <form class="col-xl-10 col-12 form-coin">
+
+                        <div class="row item">
+                            <div class="col-2 d-flex justify-content-end">
+                                <span class="number">1</span>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
                         <span class="step-icon">
                             <img src="static/src/step1.png" alt="" class="img-fluid">
                         </span>
-                        </div>
-                        <div class="col-7">
-                            <div class="form-group">
-                                <label for="">{% trans %}Введите кол-во CastleCoin для покупки, например 100 CastleCoin = 100 рублей или 37 гривен. {% endtrans %}</label>
-                                <input type="text" value="{{ count }}" class="form-control coin_count_input">
                             </div>
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <label for="">{% trans %}Введите кол-во CastleCoin для покупки, например 100
+                                        CastleCoin = 100 рублей или 37 гривен. {% endtrans %}</label>
+                                    <input type="text" value="{{ count }}" class="form-control coin_count_input">
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="row item">
-                        <div class="col-2 d-flex justify-content-end">
-                            <span class="number">2</span>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
+                        <div class="row item">
+                            <div class="col-2 d-flex justify-content-end">
+                                <span class="number">2</span>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
                         <span class="step-icon">
                             <img src="static/src/step2.png" alt="" class="img-fluid">
                         </span>
-                        </div>
-                        <div class="col-7">
-                            <div class="form-group">
-                                <label for="">{% trans %}С помощью Telegram-бота узнайте свой Telegram ID. У каждого пользователя он уникален. {% endtrans %}</label>
-                                <input type="text" value="{{ tg_id }}" class="form-control tg_id_input">
                             </div>
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <label for="">{% trans %}С помощью Telegram-бота узнайте свой Telegram ID. У каждого
+                                        пользователя он уникален. {% endtrans %}</label>
+                                    <input type="text" value="{{ tg_id }}" class="form-control tg_id_input">
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="row item">
-                        <div class="col-2 d-flex justify-content-end">
-                            <span class="number">3</span>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
+                        <div class="row item">
+                            <div class="col-2 d-flex justify-content-end">
+                                <span class="number">3</span>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
                         <span class="step-icon">
                             <img src="static/src/step3.png" alt="" class="img-fluid">
                         </span>
-                        </div>
-                        <div class="col-7">
-                            <div class="form-group">
-                                <label for="">{% trans %}В случайные дни мы запускаем промокод на покупку CastleCoin. Подпишитесь на {% endtrans %}<a href="https://t.me/letsplaycastleclash"
-                                          class="primary">@letsplaycastleclash</a>.</label>
-                                <input type="text" value="" class="form-control promo_input"/>
                             </div>
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <label for="">{% trans %}В случайные дни мы запускаем промокод на покупку
+                                        CastleCoin. Подпишитесь на {% endtrans %}<a
+                                            href="https://t.me/letsplaycastleclash"
+                                            class="primary">@letsplaycastleclash</a>.</label>
+                                    <input type="text" value="" class="form-control promo_input"/>
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="row item">
-                        <div class="col-2 d-flex justify-content-end">
-                            <span class="number">4</span>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
+                        <div class="row item">
+                            <div class="col-2 d-flex justify-content-end">
+                                <span class="number">4</span>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
                         <span class="step-icon">
                             <img src="static/src/step4.png" alt="" class="img-fluid">
                         </span>
-                        </div>
-                        <div class="col-7">
-                            <div class="form-group">
-                                <label for="">{% trans %}Сумма к оплате:{% endtrans %}</label>
-                                <input type="text" value="" class="form-control payment_sum_input" readonly>
                             </div>
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <label for="">{% trans %}Сумма к оплате:{% endtrans %}</label>
+                                    <input type="text" value="" class="form-control payment_sum_input" readonly>
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="row item">
-                        <div class="col-2 d-flex justify-content-end">
-                            <span class="number">5</span>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
+                        <div class="row item">
+                            <div class="col-2 d-flex justify-content-end">
+                                <span class="number">5</span>
+                            </div>
+                            <div class="col-3 d-flex justify-content-end">
                         <span class="step-icon">
                             <img src="static/src/step5.png" alt="" class="img-fluid">
                         </span>
-                        </div>
-                        <div class="col-7">
-                            <div class="form-group">
-                                <label for="">{% trans %}Выберите способ оплаты. Принимаются: Банковские карты, Apple & Google Pay (ЮMoney), кошелек ЮMoney, Qiwi.{% endtrans %}</label>
-
-                                <div class="form-btn">
-                                    <div class="item">
-                                        <input type="radio" name="payment" id="bank-card" checked>
-                                        <label class="payment-btn" for="bank-card">{% trans %}Банковская карта{% endtrans %}</label>
-                                    </div>
-
-                                    <div class="item">
-                                        <input type="radio" name="payment" id="u-money">
-                                        <label class="payment-btn" for="u-money">ЮMoney</label>
-                                    </div>
-
-                                    <div class="item">
-                                        <input type="radio" name="payment" id="qiwi">
-                                        <label class="payment-btn" for="qiwi">QIWI</label>
-                                    </div>
-
-                                    <div class="item">
-                                        <input type="radio" name="payment" id="monobank">
-                                        <label class="payment-btn" for="monobank">{% trans %}Monobank Украина{% endtrans %}</label>
-                                    </div>
-                                </div>
-                                <input class="btn btn-block btn-dark btn-complete" type="button" value={% trans %}"Подтвердить"{% endtrans %}/>
-
                             </div>
+                            <div class="col-7">
+                                <div class="form-group">
+                                    <label for="">{% trans %}Выберите способ оплаты. Принимаются: Банковские карты,
+                                        Apple & Google Pay (ЮMoney), кошелек ЮMoney, Qiwi.{% endtrans %}</label>
+
+                                    <div class="form-btn">
+                                        <div class="item">
+                                            <input type="radio" name="payment" id="bank-card" checked>
+                                            <label class="payment-btn" for="bank-card">{% trans %}Банковская
+                                                карта{% endtrans %}</label>
+                                        </div>
+
+                                        <div class="item">
+                                            <input type="radio" name="payment" id="u-money">
+                                            <label class="payment-btn" for="u-money">ЮMoney</label>
+                                        </div>
+
+                                        <div class="item">
+                                            <input type="radio" name="payment" id="qiwi">
+                                            <label class="payment-btn" for="qiwi">QIWI</label>
+                                        </div>
+
+                                        <div class="item">
+                                            <input type="radio" name="payment" id="monobank">
+                                            <label class="payment-btn" for="monobank">{% trans %}Monobank
+                                                Украина{% endtrans %}</label>
+                                        </div>
+                                    </div>
+                                    <input class="btn btn-block btn-dark btn-complete" type="button"
+                                           value={% trans %}"Подтвердить"{% endtrans %}/>
+
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="row item">
-                        <div class="col-2 d-flex justify-content-end">
+                        <div class="row item">
+                            <div class="col-2 d-flex justify-content-end">
                             <span class="number no-line">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path
                                         d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"/></svg>
                             </span>
-                        </div>
-                        <div class="col-3 d-flex justify-content-end">
-                        </div>
-                        <div class="col-7">
-                            <div class="form-group">
-
                             </div>
+                            <div class="col-3 d-flex justify-content-end">
+                            </div>
+                            <div class="col-7">
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-</main>
+    </main>
 {% endblock %}
