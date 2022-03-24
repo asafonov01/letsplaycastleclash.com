@@ -5,8 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="image/x-icon" href="../static/src/logo.png" rel="shortcut icon">
-    <link type="Image/x-icon" href="../static/src/logo.png" rel="icon">
+    {% if lang == 'ru' %}
+        <link type="image/x-icon" href="../static/src/logo.png" rel="shortcut icon">
+        <link type="Image/x-icon" href="../static/src/logo.png" rel="icon">
+    {% else -%}
+        <link type="image/x-icon" href="../static/src/logo_en.png" rel="shortcut icon">
+        <link type="Image/x-icon" href="../static/src/logo_en.png" rel="icon">
+
+    {% endif %}
 
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -27,7 +33,13 @@
 
             <div class="col-xl-2 col-lg-2 col-4">
                 <div class="logo">
-                    <a href="#"><img src="../static/src/logo.png" alt="Castle Clash клуб игроков" class="img-fluid"></a>
+                    {% if lang == 'ru' %}
+
+                        <a href="#"><img src="../static/src/logo.png" alt="Castle Clash клуб игроков" class="img-fluid"></a>
+                    {% else -%}
+                        <a href="#"><img src="../static/src/logo_en.png" alt="Castle Clash клуб игроков"
+                                         class="img-fluid"></a>
+                    {% endif %}
                 </div>
             </div>
             <div class="col-2 offset-6 d-lg-none d-block">
@@ -78,19 +90,21 @@
                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                         {% if lang == 'ru' %}
-                        <span class="flag"><img src=../static/src/rus.svg alt="" class="img-fluid"></span>
-                        <span>Русский</span>
+                            <span class="flag"><img src=../static/src/rus.svg alt="" class="img-fluid"></span>
+                            <span>Русский</span>
                         {% else -%}
-                        <span class="flag"><img src=../static/src/eng.svg alt="" class="img-fluid"></span>
-                        <span>English</span>
+                            <span class="flag"><img src=../static/src/eng.svg alt="" class="img-fluid"></span>
+                            <span>English</span>
                         {% endif %}
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                        <a href="#" class="dropdown-item" onclick="set_lang('ru')"><span class="flag"><img src=../static/src/rus.svg alt=""
-                                                                                        class="img-fluid"></span> <span>Русский</span></a>
-                        <a href="#" class="dropdown-item" onclick="set_lang('en')"><span class="flag"><img src=../static/src/eng.svg alt=""
-                                                                                  class="img-fluid"></span> <span>English</span></a>
+                        <a href="#" class="dropdown-item" onclick="set_lang('ru')"><span class="flag"><img
+                                src=../static/src/rus.svg alt=""
+                                class="img-fluid"></span> <span>Русский</span></a>
+                        <a href="#" class="dropdown-item" onclick="set_lang('en')"><span class="flag"><img
+                                src=../static/src/eng.svg alt=""
+                                class="img-fluid"></span> <span>English</span></a>
                     </div>
                 </div>
             </div>
@@ -108,18 +122,20 @@
                     <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                         {% if lang == 'ru' %}
-                        <span class="flag"><img src=../static/src/rus.svg alt="" class="img-fluid"></span>
-                        <span>Русский</span>
+                            <span class="flag"><img src=../static/src/rus.svg alt="" class="img-fluid"></span>
+                            <span>Русский</span>
                         {% else -%}
-                        <span class="flag"><img src=../static/src/eng.svg alt="" class="img-fluid"></span>
-                        <span>English</span>
+                            <span class="flag"><img src=../static/src/eng.svg alt="" class="img-fluid"></span>
+                            <span>English</span>
                         {% endif %}
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#" onclick="set_lang('ru')"><span class="flag"><img src=../static/src/rus.svg alt=""
-                                                                                  class="img-fluid"></span> <span>Русский</span></a>
-                        <a class="dropdown-item" href="#" onclick="set_lang('en')"><span class="flag"><img src=../static/src/eng.svg alt=""
-                                                                                  class="img-fluid"></span> <span>English</span></a>
+                        <a class="dropdown-item" href="#" onclick="set_lang('ru')"><span class="flag"><img
+                                src=../static/src/rus.svg alt=""
+                                class="img-fluid"></span> <span>Русский</span></a>
+                        <a class="dropdown-item" href="#" onclick="set_lang('en')"><span class="flag"><img
+                                src=../static/src/eng.svg alt=""
+                                class="img-fluid"></span> <span>English</span></a>
                     </div>
                 </div>
             </li>
@@ -136,8 +152,12 @@
 
         <div class="row justify-content-center">
             <div class="col-xl-2 col-4 text-center">
-                <a href="#"><img src="../static/src/logo.png" alt="Castle Clash клуб игроков"
-                                 class="img-fluid logo"></a>
+                {% if lang == 'ru' %}
+                    <a href="#"><img src="../static/src/logo.png" alt="Castle Clash клуб игроков" class="img-fluid logo"></a>
+                {% else -%}
+                    <a href="#"><img src="../static/src/logo_en.png" alt="Castle Clash player's club" class="img-fluid logo"></a>
+
+                {% endif %}
             </div>
             <div class="col-12">
                 <ul class="list-unstyled privacy d-flex justify-content-center">
