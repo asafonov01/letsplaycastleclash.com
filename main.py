@@ -25,8 +25,8 @@ async def locale_middleware(request, handler):
     translations = Translations.load('locales', _code or 'en')
     request['lang'] = _code
 
-
-    jinja_environment = aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('./letsplaycastleclash.com/templates'), enable_async=True, extensions=['jinja2.ext.i18n'])
+    jinja_environment = aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('./letsplaycastleclash.com/templates'),
+                                             enable_async=True, extensions=['jinja2.ext.i18n'])
     jinja_environment.install_gettext_translations(translations)
 
     resp = await handler(request)
@@ -42,8 +42,8 @@ async def index(request: BaseRequest):
 
 @routes.get('/faq')
 @aiohttp_jinja2.template('faq.jinja2')
-async def faq(_: BaseRequest):
-    return {}
+async def faq(request: BaseRequest):
+    return {'lang': request['lang']}
 
 
 @routes.get('/payment')
@@ -51,27 +51,29 @@ async def faq(_: BaseRequest):
 async def payment(request: BaseRequest):
     return {
         'tg_id': request.rel_url.query.get('tg_id') or '',
-        'count': request.rel_url.query.get('count') or 100
+        'count': request.rel_url.query.get('count') or 100,
+        'lang': request['lang']
+
     }
 
 
 @routes.get('/policy')
 @aiohttp_jinja2.template('policy.jinja2')
-async def policy(_: BaseRequest):
-    return {}
+async def policy(request: BaseRequest):
+    return {'lang': request['lang']}
 
 
 @routes.get('/privacy')
 @aiohttp_jinja2.template('privacy.jinja2')
-async def privacy(_: BaseRequest):
-    return {}
+async def privacy(request: BaseRequest):
+    return {'lang': request['lang']}
 
 
 routes.static('/static', 'letsplaycastleclash.com/static')
 
 if __name__ == '__main__':
     app = web.Application(middlewares=[locale_middleware])
-    #logging.basicConfig(level=logging.DEBUG)
+    # logging.basicConfig(level=logging.DEBUG)
 
     app.add_routes(routes)
 
