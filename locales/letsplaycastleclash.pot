@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2022-03-24 15:52+0000\n"
+"POT-Creation-Date: 2022-03-24 19:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,422 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: letsplaycastleclash.com/templates/faq.jinja2:14
+msgid "Инструкция & Ответы на часто задаваемые вопросы"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:27
+msgid ""
+"Выберите ниже инструкцию по пользованию бота и/или ответы на часто "
+"задаваемые вопросы к руководстве бота."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:32
+#: letsplaycastleclash.com/templates/faq.jinja2:42
+msgid "Инструкция"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:33
+msgid "Ответы на часто задаваемые вопросы"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:34
+#: letsplaycastleclash.com/templates/faq.jinja2:556
+msgid "Другое"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:57
+msgid "Начало работы"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:68
+msgid ""
+"Напишите в <a href=\"https://t.me/cc_puzzle_bot\" "
+"class=\"primary\">личные сообщения</a> команду <code>/start</code> "
+"(кнопка «Запустить»)."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:69
+msgid ""
+"Появится клавиатура <img src=\"../static/src/Commands1.svg\"> с "
+"множеством функций."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:73
+msgid ""
+"Telegram ID - ваш уникальный ID аккаунта в Telegram, который "
+"присваивается при регистрации."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:77
+msgid ""
+"Баланс CastleCoin. CastleCoin - валюта бота. Можно принимать участие в "
+"событиях игры, которые доступные в боте:"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:78
+msgid ""
+"Загадочный Пазл и Возвращение Домой. Детально с платными услугами можно "
+"ознакомиться на этой <a href=\"index#price\" "
+"class=\"primary\">странице</a>."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:91
+msgid "Покупка; промокод; возврат средств"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:103
+msgid "Покупка CastleCoin"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:109
+msgid ""
+"Откройте меню <img src=\"../static/src/Commands1.svg\">, кнопка «Купить "
+"CastleCoin» >> выберите желаемую сумму для покупки."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:113
+msgid ""
+"Можно разными способами пополнить баланс: самостоятельный перевод (с "
+"карты на карту), "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:114
+msgid ""
+"сервис автооплаты ЮMoney и QIWI (доступно для игроков из Российской "
+"Федерации), "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:115
+msgid "международный платежный сервис"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:120
+msgid "Промокод CastleCoin"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:126
+msgid ""
+"В случайные дни запускаем промокод, который дает 20% скидку на покупку "
+"CastleCoin. "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:127
+msgid ""
+"Подписывайтесь на <a href=\"https://t.me/letsplaycastleclash\" "
+"class=\"primary\">@letsplaycastleclash</a>, и следите за новостями о "
+"запуске промокодов."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:133
+msgid "Возврат средств"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:136
+msgid ""
+"Отменить подписку можно в течение <b>7 дней</b> после приобретения "
+"тарифа. "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:137
+msgid ""
+"Свяжитесь с нами через <a href=\"https://t.me/CCletsplay_bot\" "
+"class=\"primary\">@CCletsplay_bot</a>, предоставив чек, дату оплаты."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:140
+msgid "Примечание:"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:144
+msgid ""
+"Возврат возможен только в том случае, если вы не пользовались нашими "
+"платными услугами во время действующих Акций."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:148
+msgid "Возврат возможен только на тот счет, откуда производилась оплата."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:165
+#: letsplaycastleclash.com/templates/index.jinja2:230
+msgid "Возвращение домой"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:178
+msgid "Получение бесплатных попыток"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:180
+msgid ""
+"За неделю до окончания События, игроки могут воспользоваться бесплатными "
+"попытками (5/5). Об этом уведомляется заранее на канале "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:187
+#: letsplaycastleclash.com/templates/faq.jinja2:213
+msgid ""
+"Откройте страницу в игре «Возвращение Домой» >> нажмите и удерживайте "
+"код, чтобы скопировать."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:192
+#: letsplaycastleclash.com/templates/faq.jinja2:218
+msgid ">> меню <img src=\"../static/src/Commands1.svg\"> >> «Возвращение Домой»."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:196
+msgid ""
+"Отправьте ваш код >> \"Использовать бесплатные попытки\". После успешной "
+"обработки бот уведомит вас о завершении."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:207
+msgid "Получение наград"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:209
+#: letsplaycastleclash.com/templates/faq.jinja2:261
+msgid "Доступно в платной версии"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:222
+msgid ""
+"Отправьте код >> Нажмите кнопку 10 или 15, чтобы выбрать число вводов "
+"кодов и получить награды >> ожидайте поступление Наград на почту."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:227
+#: letsplaycastleclash.com/templates/faq.jinja2:278
+msgid "Примечание"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:232
+msgid ""
+"Почта имеет ограничение в 60 слотов, своевременно забирайте награду после"
+" первого ввода кода. CastleCoin не будут возмещены на баланс, в случае "
+"утери Наград. "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:250
+#: letsplaycastleclash.com/templates/index.jinja2:207
+msgid "Загадочный пазл"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:265
+msgid "Меню <img src=\"../static/src/Commands1.svg\"> >> «Загадочный пазл»."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:269
+msgid "Нажмите «Активировать доступ Загадочного Пазла» >> «Подтвердить покупку»."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:273
+msgid "Отлично! Теперь у вас активирован Загадочный Пазл. Приятного пользования."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:283
+msgid ""
+"На один игровой аккаунт можно взять до 30 Фрагментов за одну акцию по "
+"правилам События."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:300
+msgid "Великий торговец"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:312
+msgid "Откройте страницу в игре «Великий торговец» >> скопируйте код предмета."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:317
+msgid ">> меню <img src=\"../static/src/Commands1.svg\"> >> «Великий торговец»."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:321
+msgid ""
+"Отправьте код предмета, и ожидайте уведомление об обработки кода. "
+"Обработка одного кода займет не более 1 минуты. Возможны задержки, из-за "
+"очереди."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:338
+msgid "10 дней призов"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:350
+msgid ""
+"Откройте любого Героя в Алтаре Героев >> под Героем синяя кнопка "
+"«Рекомендация», нажмите."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:354
+msgid "Вас перенаправит на страницу браузера. Из строки скопируйте ссылку."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:359
+msgid ""
+">> меню <img src=\"../static/src/Commands1.svg\"> >> «10 Дней Призов» >> "
+"отправьте ссылку боту."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:363
+msgid "Отлично! Ваша ссылка добавлена."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:380
+msgid "Ответы"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:395
+msgid "Возвращение Домой"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:408
+msgid "Попытки списались после отправки кода, а Награды не поступили на почту"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:413
+msgid ""
+"<b>Неправильный код:</b> Правильный код состоит из 8 символов, написан на"
+" английском языке и содержит символы 0-9 и A-F, обновляется каждую акцию."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:417
+#: letsplaycastleclash.com/templates/faq.jinja2:492
+msgid "<b>Очередь:</b> каждый код обрабатывается поочередно."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:421
+msgid "<b>Сервера IGG:</b> награды приходят с задержкой. "
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:422
+msgid ""
+"Если в \"записях\" пишет кол-во приглашаемых аккаунтов, а награды не "
+"пришли - стоит обратиться в техническую поддержку игры, написав им, чтобы"
+" отправили награды."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:439
+msgid "Загадочный Пазл"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:451
+msgid "Бот выдает пустые коды"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:456
+msgid "<b>Коды закончились:</b> обратитесь в службу поддержки"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:458
+msgid "сообщите нам об этом, чтобы мы нафармили их."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:476
+msgid "Великий Торговец"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:487
+msgid "Отправил(а) код боту, а Награды не приходят"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:508
+msgid "10 Дней призов"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:520
+msgid "Хочу кинуть ссылку боту, но я боюсь за свои игровой аккаунт"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:525
+msgid ""
+"Уникальный ключ (signed key) доступен только вам. Этот ключ давать "
+"третьим лицам запрещено, кроме нашего бота."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:529
+msgid ""
+"Сеансы каждого ключа действительны до двух недель, после чего "
+"генерируется новый ключ."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:533
+msgid ""
+"В первую очередь, мы используем ваш уникальный ключ (signed key) и IGG ID"
+" в рамках предоставления услуг."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:534
+msgid ""
+"Бот не может ничего сделать на вашем Аккаунте, а также не входит в саму "
+"игру."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:535
+msgid ""
+"Боту нужен только доступ к Событиям игры, а События никак не связаны с "
+"игрой."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:570
+msgid "Что такое проект Клуб игроков Castle Clash?"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:578
+msgid ""
+"Клуб игроков Castle CLash — ресурс, который рассказывает обо всех "
+"новостях, инсайдах в мире Castle Clash."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:581
+msgid ""
+"Сотрудничали с IGG RU, были звеном между игроками и сотрудниками "
+"компании. Передавали ошибки об игре, предложения и многое другое..."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:583
+msgid "Для этого использовался официальный чат в Telegram вместе с IGG."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:586
+msgid "Летом 2020 года, сообщество было закрыто."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:587
+msgid ""
+"Спустя некоторое время мы вернулись, в декабре запустили новый проект с "
+"ботом, чтобы облегчить игрокам, участвуя в разных событиях игры."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:599
+msgid "Безопасно ли использовать бота?"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:607
+msgid ""
+"Да! Бот абсолютно безопасен. Мы не требуем данных от Вас (Почты Gmail, "
+"IGG Account и пароли)."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:608
+msgid ""
+"Обязательно прочтите <a href=\"./policy\" class=\"primary\">Политику "
+"Конфиденциальности</a> и <a href=\"./privacy\" class=\"primary\">Условия "
+"Предоставления Услуг</a>."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:611
+msgid "У нас происходит волшебство, и игрок получает Награду на свой аккаунт."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/faq.jinja2:614
+msgid ""
+"Ваша игровая учетная запись не может быть заблокирована, поскольку не "
+"нарушает TOS игры."
+msgstr ""
 
 #: letsplaycastleclash.com/templates/index.jinja2:13
 msgid " Бот по Castle Clash - для тех, <br> кто ценит своё время. "
@@ -150,13 +566,9 @@ msgid "10к+ <br> подписчиков"
 msgstr ""
 
 #: letsplaycastleclash.com/templates/index.jinja2:197
-#: letsplaycastleclash.com/templates/template.jinja2:57
-#: letsplaycastleclash.com/templates/template.jinja2:101
+#: letsplaycastleclash.com/templates/template.jinja2:59
+#: letsplaycastleclash.com/templates/template.jinja2:103
 msgid "Прейскурант"
-msgstr ""
-
-#: letsplaycastleclash.com/templates/index.jinja2:207
-msgid "Загадочный пазл"
 msgstr ""
 
 #: letsplaycastleclash.com/templates/index.jinja2:210
@@ -177,10 +589,6 @@ msgstr ""
 msgid "Перейти"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/index.jinja2:230
-msgid "Возвращение домой"
-msgstr ""
-
 #: letsplaycastleclash.com/templates/index.jinja2:233
 msgid "25 попыток"
 msgstr ""
@@ -190,8 +598,8 @@ msgid "попытки не сгорают"
 msgstr ""
 
 #: letsplaycastleclash.com/templates/index.jinja2:262
-#: letsplaycastleclash.com/templates/template.jinja2:63
-#: letsplaycastleclash.com/templates/template.jinja2:102
+#: letsplaycastleclash.com/templates/template.jinja2:65
+#: letsplaycastleclash.com/templates/template.jinja2:104
 msgid "Команда"
 msgstr ""
 
@@ -228,66 +636,71 @@ msgstr ""
 msgid "Партнёр"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:9
+#: letsplaycastleclash.com/templates/payment.jinja2:14
 msgid "Покупка CastleCoin в @cc_puzzle_bot"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:10
+#: letsplaycastleclash.com/templates/payment.jinja2:15
 msgid ""
-"Покупайте по выгодной цене наши услуги, все награды поступят на ваш "
-"игровой аккаунт"
+"Покупайте по выгодной цене наши услуги, все награды поступят на ваш\n"
+"                            игровой аккаунт"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:59
+#: letsplaycastleclash.com/templates/payment.jinja2:66
 msgid "При оплате пользователь принимает"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:60
+#: letsplaycastleclash.com/templates/payment.jinja2:67
 msgid ""
-"Политику конфиденциальности</a> и <a href=\"./privacy\"\n"
-""
-"                                                                                                     "
-"class=\"primary\">Условия\n"
-"                            предоставления услуг</a>"
+"Политику конфиденциальности</a> и\n"
+"                                <a href=\"./privacy\"\n"
+"                                   class=\"primary\">Условия\n"
+"                                    предоставления услуг</a>"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:79
+#: letsplaycastleclash.com/templates/payment.jinja2:87
 msgid ""
-"Введите кол-во CastleCoin для покупки, например 100 CastleCoin = 100 "
-"рублей или 37 гривен. "
+"Введите кол-во CastleCoin для покупки, например 100\n"
+"                                        CastleCoin = 100 рублей или 37 "
+"гривен. "
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:97
+#: letsplaycastleclash.com/templates/payment.jinja2:106
 msgid ""
-"С помощью Telegram-бота узнайте свой Telegram ID. У каждого пользователя "
-"он уникален. "
+"С помощью Telegram-бота узнайте свой Telegram ID. У каждого\n"
+"                                        пользователя он уникален. "
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:115
+#: letsplaycastleclash.com/templates/payment.jinja2:125
 msgid ""
-"В случайные дни мы запускаем промокод на покупку CastleCoin. Подпишитесь "
-"на "
+"В случайные дни мы запускаем промокод на покупку\n"
+"                                        CastleCoin. Подпишитесь на "
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:134
+#: letsplaycastleclash.com/templates/payment.jinja2:146
 msgid "Сумма к оплате:"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:152
+#: letsplaycastleclash.com/templates/payment.jinja2:164
 msgid ""
-"Выберите способ оплаты. Принимаются: Банковские карты, Apple & Google Pay"
-" (ЮMoney), кошелек ЮMoney, Qiwi."
+"Выберите способ оплаты. Принимаются: Банковские карты,\n"
+"                                        Apple & Google Pay (ЮMoney), "
+"кошелек ЮMoney, Qiwi."
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:157
-msgid "Банковская карта"
+#: letsplaycastleclash.com/templates/payment.jinja2:170
+msgid ""
+"Банковская\n"
+"                                                карта"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:172
-msgid "Monobank Украина"
+#: letsplaycastleclash.com/templates/payment.jinja2:186
+msgid ""
+"Monobank\n"
+"                                                Украина"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/payment.jinja2:175
+#: letsplaycastleclash.com/templates/payment.jinja2:191
 msgid "\"Подтвердить\""
 msgstr ""
 
@@ -296,6 +709,7 @@ msgid "Политика конфиденциальности"
 msgstr ""
 
 #: letsplaycastleclash.com/templates/policy.jinja2:13
+#: letsplaycastleclash.com/templates/privacy.jinja2:13
 msgid "Последнее изменение: 21 января (четверг), 2021 г."
 msgstr ""
 
@@ -368,42 +782,121 @@ msgid ""
 "странице."
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:17
+#: letsplaycastleclash.com/templates/privacy.jinja2:10
+msgid "Условия предоставления услуг"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:16
+msgid ""
+"Оформив подписку на <a href=\"\" class=\"primary\">@cc_puzzle_bot</a>, "
+"Пользователь считается принявшим настоящие Условия. В случае несогласия "
+"Пользователя с положениями указанных Условий, Пользователь обязан "
+"прекратить подписку на\n"
+"                            <a href=\"\" "
+"class=\"primary\">@cc_puzzle_bot</a> путем отключения бота."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:19
+msgid "Подписка на бота"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:22
+msgid ""
+"Полный и актуальный перечень возможностей и функций, доступных в текущий "
+"момент в рамках оплаченной подписки на Castle Clash Bot, приведен"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:23
+msgid "здесь"
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:24
+msgid ""
+"Возврат средств за соответствующий период подписки или функционала "
+"является отказом Пользователя от продления подписки на Castle Clash Bot. "
+"В таком случае доступ к полному функционалу Castle Clash Bot "
+"прекращается, если не были нарушены <a href=\"/faq\" "
+"class=\"primary\">Порядок возврата средств</a> (#2 Покупка; Промокод; "
+"Воврат средств)."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:25
+msgid ""
+"Пользователь понимает и соглашается с тем, что перечень возможностей и "
+"функций, предоставляемый в рамках Castle Clash Bot и приведенный на <a "
+"href=\"index#price\" class=\"primary\">здесь</a>, может изменяться, в "
+"т.ч. дополняться/сокращаться."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:26
+msgid ""
+"Пользователь принимает и соглашается с тем, что любое изменение перечня "
+"функций в указанном выше порядке, не является основанием для отмены "
+"подписки на функционал, пересмотра ее стоимости на оплаченный Период "
+"подписки или возврата денежных средств."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:27
+msgid ""
+"Владелец или команда бота оставляют за собой право на свое усмотрение "
+"отказать Пользователю в доступе или ограничить к определенным функциям "
+"Сервиса, без предварительного уведомления."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:28
+msgid ""
+"Владелец бота предпримет все разумные меры и осуществит любые "
+"целесообразные действия, направленные на поддержание работоспособности "
+"сервисов Castle Clash Bot. Пользователь при этом осознает возможность "
+"возникновения технических неисправностей и сбоев в работе указанных "
+"сервисов и согласен с тем, что у Команды или Владельца бота отсутствует "
+"техническая возможность предсказать их возникновение, уведомить о них "
+"Пользователя заблаговременно, либо полностью исключить вероятность их "
+"возникновения."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/privacy.jinja2:29
+msgid ""
+"Бот предназначен для помощи игрокам в различных событиях, в игре Castle "
+"Clash."
+msgstr ""
+
+#: letsplaycastleclash.com/templates/template.jinja2:19
 msgid "Клуб игроков Castle Clash | Главная"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:45
-#: letsplaycastleclash.com/templates/template.jinja2:99
+#: letsplaycastleclash.com/templates/template.jinja2:47
+#: letsplaycastleclash.com/templates/template.jinja2:101
 msgid "Главная"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:51
-#: letsplaycastleclash.com/templates/template.jinja2:100
+#: letsplaycastleclash.com/templates/template.jinja2:53
+#: letsplaycastleclash.com/templates/template.jinja2:102
 msgid "Функции"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:69
-#: letsplaycastleclash.com/templates/template.jinja2:104
+#: letsplaycastleclash.com/templates/template.jinja2:71
+#: letsplaycastleclash.com/templates/template.jinja2:106
 msgid "FAQ"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:142
+#: letsplaycastleclash.com/templates/template.jinja2:144
 msgid "Политика"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:143
+#: letsplaycastleclash.com/templates/template.jinja2:145
 msgid "Условия"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:163
+#: letsplaycastleclash.com/templates/template.jinja2:165
 msgid "Товарный знак"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:165
+#: letsplaycastleclash.com/templates/template.jinja2:167
 msgid "принадлежит"
 msgstr ""
 
-#: letsplaycastleclash.com/templates/template.jinja2:167
+#: letsplaycastleclash.com/templates/template.jinja2:169
 msgid "© 2022, Все права защищены."
 msgstr ""
 
