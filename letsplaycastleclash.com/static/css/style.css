@@ -1091,9 +1091,6 @@ footer .social-links > li:hover a {
     width: 40px;
     height: 40px;
   }
-  footer .copyright img {
-    width: 25%;
-  }
 }
 @media (max-width: 992px) {
   header .container {
@@ -1260,9 +1257,9 @@ footer .social-links > li:hover a {
     width: 40px;
     height: 40px;
   }
-  footer .copyright img {
-    width: 25%;
-  }
+}
+.copyright img {
+  max-height: 100px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

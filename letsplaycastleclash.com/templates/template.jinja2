@@ -153,9 +153,11 @@
         <div class="row justify-content-center">
             <div class="col-xl-2 col-4 text-center">
                 {% if lang == 'ru' %}
-                    <a href="#"><img src="../static/src/logo.png" alt="Castle Clash клуб игроков" class="img-fluid logo"></a>
+                    <a href="#"><img src="../static/src/logo.png" alt="Castle Clash клуб игроков"
+                                     class="img-fluid logo"></a>
                 {% else -%}
-                    <a href="#"><img src="../static/src/logo_en.png" alt="Castle Clash player's club" class="img-fluid logo"></a>
+                    <a href="#"><img src="../static/src/logo_en.png" alt="Castle Clash player's club"
+                                     class="img-fluid logo"></a>
 
                 {% endif %}
             </div>
@@ -168,24 +170,28 @@
             <div class="col-12">
                 <ul class="list-unstyled social-links d-flex justify-content-center">
                     <li><a href="https://t.me/letsplaycastleclash">
-                        <img src="../static/src/tg.svg" alt="" class="img-fluid">
+                        <img src="../static/src/tg.svg" alt="" class="img-fluid social-img">
                     </a></li>
                     <li><a href="mailto:support@letsplaycastleclash.com">
-                        <img src="../static/src/Gmail.svg" alt="" class="img-fluid">
+                        <img src="../static/src/Gmail.svg" alt="" class="img-fluid social-img">
                     </a></li>
                     <li><a href="https://t.me/ccletsplay">
-                        <img src="../static/src/comment.svg" alt="" class="img-fluid">
+                        <img src="../static/src/comment.svg" alt="" class="img-fluid social-img">
                     </a></li>
                     <li><a href="https://t.me/CCletsplay_bot">
-                        <img src="../static/src/support.svg" alt="" class="img-fluid">
+                        <img src="../static/src/support.svg" alt="" class="img-fluid social-img">
                     </a></li>
                 </ul>
             </div>
             <div class="col-12 text-center copyright">
                 <span>{% trans %}Товарный знак{% endtrans %}</span>
-                <img src="../static/src/logo-orig.png" alt="" class="img-fluid">
+                {% if lang == 'ru' %}
+                    <img src="../static/src/logo-orig.png" alt="" class="img-fluid logo" >
+                {% else -%}
+                    <img src="../static/src/logo-orig_en.png" alt="" class="img-fluid logo" >
+                {% endif %}
                 <span> {% trans %}принадлежит{% endtrans %}</span>
-                <img src="../static/src/logo-igg.png" alt="" class="img-fluid">
+                <img src="../static/src/logo-igg.png" alt="" class="img-fluid logo">
                 <span>{% trans %}© 2022, Все права защищены.{% endtrans %}</span>
             </div>
 

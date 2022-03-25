@@ -236,20 +236,23 @@ body {
   color: $main-color;
   scroll-behavior: smooth;
 }
-main  {
+
+main {
   overflow: hidden;
 }
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1600px;
-    }
-  }
 
-@media screen and (max-width: 1200px ) and (min-width: 991px){
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 991px) {
   .container {
     max-width: 1140px;
   }
 }
+
 .trans {
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -264,6 +267,7 @@ main  {
   justify-content: center;
   margin-right: 8px;
   @extend .trans;
+
   svg {
     width: 100%;
     height: 100%;
@@ -278,14 +282,17 @@ a:visited {
   @extend .trans;
   color: $link-color;
   text-decoration: none;
+
   &:hover, &:focus {
     color: $main-color;
     text-decoration: none;
   }
 }
+
 a.primary, .primary {
   color: $primary
 }
+
 .title {
   color: $primary;
   font-size: 60px;
@@ -299,6 +306,7 @@ section {
 .btn {
   padding: 15px 50px;
   border-radius: 0;
+
   &:focus {
     border: none;
     outline: none;
@@ -309,9 +317,11 @@ section {
 .ml-8 {
   margin-left: 6.5rem;
 }
+
 .mb-8 {
   margin-bottom: 6.5rem;
 }
+
 a.btn-primary, .btn-primary {
   background: $primary;
   color: $main-color;
@@ -319,15 +329,18 @@ a.btn-primary, .btn-primary {
   border-radius: 50px;
   font-weight: 600;
   font-size: 40px;
+
   .icon {
     svg {
       fill: $main-color;
     }
   }
+
   &:hover {
     background: $main-color;
     color: $primary;
     border: 3px solid $primary;
+
     .icon {
       svg {
         fill: $primary;
@@ -341,11 +354,13 @@ a.btn-dark, .btn-dark {
   border-radius: 50px;
   background: #181818;
   border-color: #181818;
+
   .icon {
     svg {
       fill: $primary;
     }
   }
+
   &:hover {
     color: $primary;
   }
@@ -359,13 +374,15 @@ a.btn-dark, .btn-dark {
   border-radius: 20px;
   font-size: 30px;
   padding: 50px;
+
   &:focus, &:active {
     color: #fff;
     outline: none;
     border: 1px solid $primary;
     background: #181818;
-    box-shadow: 0 0 0 .2rem rgba(red($primary),green($primary),blue($primary),.25);
+    box-shadow: 0 0 0 .2rem rgba(red($primary), green($primary), blue($primary), .25);
   }
+
   &:disabled, &[readonly] {
     background: #282828;
     pointer-events: none;
@@ -385,6 +402,7 @@ header {
   background: rgba(0, 0, 0, 0.8);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
+
   .h-nav-menu-list {
     display: flex;
     flex-direction: row;
@@ -392,18 +410,21 @@ header {
     margin: 0;
 
     .h-nav-menu-item {
-      >a {
+      > a {
         display: flex;
         align-items: center;
         font-size: 26px;
+
         .icon {
           svg {
             @extend .trans;
             fill: #fff;
           }
         }
+
         &:hover, &.active {
-          color:  #EA4A4A;
+          color: #EA4A4A;
+
           svg {
             fill: #EA4A4A;
           }
@@ -419,23 +440,28 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+
     button {
       border: none;
       background: transparent;
       color: #fff;
       display: flex;
       align-items: center;
+
       &:after {
         display: none;
       }
     }
+
     .flag {
       display: inline-flex;
       margin-right: 7px;
     }
+
     .dropdown-menu {
       right: 0;
       background: #1b1e21;
+
       .dropdown-item {
         display: flex;
       }
@@ -463,6 +489,7 @@ header {
       z-index: 2;
     }
   }
+
   .main-banner-text {
     position: absolute;
     z-index: 3;
@@ -482,13 +509,14 @@ header {
 }
 
 .function-block {
-  .description-wrapper{
+  .description-wrapper {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
     text-align: center;
+
     .desc {
       font-size: 40px;
     }
@@ -499,6 +527,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 100%;
+
     .border-wrapper {
       position: relative;
       z-index: 2;
@@ -508,6 +537,7 @@ header {
       border-radius: 30px;
       border: 3px dashed #fff;
       background: rgba(0, 0, 0, 0.4);
+
       .title-box {
         padding: 5rem 3rem;
         font-weight: 500;
@@ -515,6 +545,7 @@ header {
         letter-spacing: 0.03em;
       }
     }
+
     .title-primary {
       position: relative;
       z-index: 1;
@@ -536,13 +567,16 @@ header {
       font-size: 60px;
       margin-bottom: 30px;
     }
+
     .desc {
       font-size: 40px;
       margin-bottom: 30px;
     }
+
     .btn-container {
       gap: 30px;
       display: flex;
+
       .icon {
         svg {
           @extend .trans;
@@ -555,10 +589,12 @@ header {
     .title {
       font-size: 40px;
     }
+
     .desc {
       font-size: 40px;
     }
   }
+
   .item {
     background: #181818;
     border-radius: 30px;
@@ -579,10 +615,12 @@ header {
     border-radius: 30px;
     min-height: 895px;
   }
+
   .pricing-item {
     padding-top: 5rem;
     padding-left: 15px;
     padding-right: 15px;
+
     .item {
       display: flex;
       flex-direction: column;
@@ -590,19 +628,23 @@ header {
       background: #181818;
       border-radius: 30px 30px 0 0;
       padding: 20px 30px 0 30px;
+
       .title {
         color: $main-color;
         font-weight: bold;
         font-size: 3rem;
         text-align: center;
       }
+
       .parametrs {
         font-weight: 500;
         font-size: 30px;
       }
     }
+
     .img {
       position: relative;
+
       .price {
         font-size: 2.5rem;
         font-weight: bold;
@@ -616,6 +658,7 @@ header {
       }
     }
   }
+
   .btn-dark {
     font-size: 2rem;
     font-weight: 600;
@@ -632,46 +675,54 @@ header {
   }
 }
 
-.team{
+.team {
   .item {
     border-radius: 30px;
     background: #282828;
     display: flex;
     flex-direction: column;
     height: 100%;
+
     .avatar {
       padding-top: 40px;
       text-align: center;
+
       img {
         width: 50%;
         transform: scale(1);
         @extend .trans;
       }
+
       &:hover {
         img {
           transform: scale(1.1);
         }
       }
     }
+
     .summary {
       flex-grow: 1;
       display: flex;
       flex-direction: column;
     }
+
     .name, .post {
       text-align: center;
       padding: 30px 0;
     }
+
     .name {
       font-size: 35px;
       font-weight: 700;
       margin: 0 40px;
       border-bottom: 3px solid #FFFFFF;
     }
+
     .post {
       font-weight: 500;
       font-size: 24px;
     }
+
     .tg-link {
       display: flex;
       justify-content: space-between;
@@ -683,9 +734,11 @@ header {
       background: #181818;
       color: #fff;
       border-radius: 40px;
+
       .text-btn {
         margin-right: 15px;
       }
+
       &:hover {
         opacity: 0.7;
       }
@@ -696,15 +749,19 @@ header {
 .policy, .privacy {
   font-size: 2.5rem;
   font-weight: 600;
+
   .title {
     color: $main-color;
     font-size: 4.375rem;
   }
+
   p {
     margin-bottom: 3rem;
   }
+
   a.primary {
     color: $primary;
+
     &:hover {
       text-decoration: underline;
     }
@@ -717,6 +774,7 @@ header {
     font-size: 4.375rem;
     margin-bottom: 3rem;
   }
+
   .desc {
     font-size: 2.5rem;
   }
@@ -738,6 +796,7 @@ header {
       flex: 0 0 100%;
       max-width: 100%;
       margin-bottom: 2rem;
+
       .number {
         width: 5.25rem;
         height: 5.25rem;
@@ -751,11 +810,13 @@ header {
         position: relative;
         z-index: 3;
         flex: 0 0 auto;
+
         svg {
           width: 50%;
           height: 100%;
           fill: white;
         }
+
         &:before {
           content: "";
           position: absolute;
@@ -767,6 +828,7 @@ header {
           width: 5px;
           background: #fff;
         }
+
         &.no-line {
           &:before {
             width: 8px;
@@ -776,6 +838,7 @@ header {
           }
         }
       }
+
       .step-icon {
         width: 13.125rem;
         height: 13.125rem;
@@ -783,20 +846,24 @@ header {
         flex: 0 0 auto;
       }
     }
+
     .form-group {
       label {
         font-size: 1.875rem;
         margin-bottom: 25px;
       }
     }
+
     .form-btn {
       display: flex;
       flex-wrap: wrap;
       margin-left: -15px;
       margin-right: -15px;
+
       input {
         display: none;
       }
+
       .item {
         flex: 0 0 50%;
         max-width: 50%;
@@ -804,6 +871,7 @@ header {
         margin-bottom: 30px;
         padding: 0 15px;
       }
+
       .payment-btn {
         flex: 0 0 100%;
         max-width: 100%;
@@ -822,16 +890,19 @@ header {
         border: 3px solid #181818;
         cursor: pointer;
         @extend .trans;
+
         &:hover {
           background: #282828;
         }
       }
+
       input:checked {
-        &+.payment-btn {
+        & + .payment-btn {
           border: 3px solid white;
         }
       }
     }
+
     .btn-dark {
       padding: 40px;
       border-radius: 30px;
@@ -842,17 +913,20 @@ header {
   }
 
 }
+
 .faq-guide {
   p {
     font-weight: 500;
     font-size: 40px;
   }
+
   .legend {
     list-style: none;
     margin: 0;
     padding: 0;
     margin-bottom: 6rem;
     position: relative;
+
     span {
       width: 50px;
       height: 50px;
@@ -867,16 +941,20 @@ header {
       z-index: 2;
       flex: 0 0 auto;
     }
+
     li {
       font-size: 50px;
       display: flex;
+
       a {
         color: $main-color;
+
         &:hover {
           color: $primary;
         }
       }
     }
+
     &:before {
       content: "";
       position: absolute;
@@ -896,16 +974,19 @@ header {
     font-size: 50px;
     color: $main-color;
   }
+
   .card {
     background: #181818;
     margin-bottom: 35px;
     border-radius: 30px !important;
     display: flex;
     align-items: center;
+
     .card-header {
       background: transparent;
       width: 100%;
     }
+
     .btn-link {
       color: $main-color;
       font-weight: 600;
@@ -913,59 +994,66 @@ header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       &:hover {
         text-decoration: none;
       }
     }
+
     .number {
       color: $primary;
     }
-      .indicator {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: inline-flex;
-        background: $primary;
-        color: #FFFFFF;
-        position: relative;
-        z-index: 8;
-        flex: 0 0 auto;
-        &:after {
-          content: " ";
-          width: 26px;
-          height: 6px;
-          display: flex;
-          position: absolute;
-          background: #fff;
-          top: 50%;
-          left: 50%;
-          z-index: 9;
-          transform: translate(-50%, -50%);
-        }
 
-        &:before {
-          content: " ";
-          height: 26px;
-          width: 6px;
-          display: flex;
-          position: absolute;
-          background: #fff;
-          top: 50%;
-          left: 50%;
-          z-index: 9;
-          transform: translate(-50%, -50%);
-          @extend .trans;
-        }
+    .indicator {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-flex;
+      background: $primary;
+      color: #FFFFFF;
+      position: relative;
+      z-index: 8;
+      flex: 0 0 auto;
+
+      &:after {
+        content: " ";
+        width: 26px;
+        height: 6px;
+        display: flex;
+        position: absolute;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        z-index: 9;
+        transform: translate(-50%, -50%);
+      }
+
+      &:before {
+        content: " ";
+        height: 26px;
+        width: 6px;
+        display: flex;
+        position: absolute;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        z-index: 9;
+        transform: translate(-50%, -50%);
+        @extend .trans;
+      }
     }
   }
+
   .card-body {
     .number {
       font-size: 40px;
     }
+
     .title {
       font-size: 40px;
       color: #fff;
     }
+
     font-style: italic;
     font-weight: 500;
     font-size: 30px;
@@ -982,23 +1070,28 @@ header {
   }
 
 }
+
 footer {
   padding-top: 40px;
   padding-bottom: 70px;
   background: #282828;
   font-size: 30px;
+
   .privacy {
-    >li {
+    > li {
       padding: 10px;
-      >a {
+
+      > a {
         font-size: 40px;
       }
     }
   }
+
   .social-links {
-    >li {
+    > li {
       padding: 7px;
-      >a {
+
+      > a {
         width: 64px;
         height: 64px;
         display: flex;
@@ -1006,6 +1099,7 @@ footer {
         justify-content: center;
         transform: scale(1);
       }
+
       &:hover {
         a {
           transform: scale(1.2);
@@ -1016,14 +1110,16 @@ footer {
 }
 
 .navbar-collapse {
-position: absolute;
+  position: absolute;
   left: 0;
   right: 0;
   background: $bgcolor;
   z-index: 99;
   box-shadow: 0px 5px 5px 0px rgba(234, 74, 74, 1);
+
   .h-menu {
     padding: 30px;
+
     .nav-link {
       font-weight: 500;
       font-size: 16px;
@@ -1031,10 +1127,12 @@ position: absolute;
     }
   }
 }
+
 .navbar-toggler {
   &.collapsed {
     span {
       background: $main-color;
+
       &:before {
         -webkit-transition-delay: 0, 0.3s;
         transition-delay: 0, 0.3s;
@@ -1044,6 +1142,7 @@ position: absolute;
         transform: rotate(0deg);
         background: $main-color;
       }
+
       &:after {
         -webkit-transition-delay: 0, 0.3s;
         transition-delay: 0, 0.3s;
@@ -1055,6 +1154,7 @@ position: absolute;
       }
     }
   }
+
   span {
     display: block;
     position: absolute;
@@ -1065,6 +1165,7 @@ position: absolute;
     background: none;
     -webkit-transition: background 0 0.3s;
     transition: background 0 0.3s;
+
     &:before {
       position: absolute;
       display: block;
@@ -1084,6 +1185,7 @@ position: absolute;
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
     }
+
     &:after {
       position: absolute;
       display: block;
@@ -1121,9 +1223,11 @@ position: absolute;
     .main-banner-text {
       font-size: 2rem;
     }
+
     .title {
       font-size: 1.2rem;
     }
+
     .desc {
       font-size: 1rem;
     }
@@ -1139,10 +1243,12 @@ position: absolute;
         font-size: 1.5rem;
         margin-bottom: 15px;
       }
+
       .desc {
         font-size: 1.2rem;
       }
     }
+
     .item {
       .border-wrapper {
         .title-box {
@@ -1156,15 +1262,18 @@ position: absolute;
     .item {
       font-size: 1.2rem;
     }
+
     .stat {
       .desc {
         font-size: 2rem;
       }
     }
+
     .connection {
       .title {
         font-size: 2.5rem;
       }
+
       .desc {
         font-size: 1.5rem;
       }
@@ -1174,22 +1283,27 @@ position: absolute;
   .pricing {
     .pricing-item {
       min-height: 495px;
+
       .item {
         padding: 20px 15px 0 15px;
+
         .title {
           font-size: 1.2rem;
         }
+
         .parametrs {
           font-size: 14px;
           padding-left: 15px;
         }
       }
+
       .img {
         .price {
           font-size: 1.2rem;
         }
       }
     }
+
     .btn-dark {
       font-size: 1rem;
     }
@@ -1199,16 +1313,20 @@ position: absolute;
     .title {
       font-size: 2rem;
     }
+
     .card {
       .btn-link {
         font-size: 1.5rem;
         padding: 15px;
       }
+
       .name {
         padding: 0 20px;
       }
+
       .card-body {
         font-size: 1rem;
+
         .number, .title {
           font-size: 2rem;
         }
@@ -1221,9 +1339,11 @@ position: absolute;
       li {
         font-size: 2rem;
       }
+
       span {
         flex: 0 0 auto;
       }
+
       &:before {
         bottom: 20%;
       }
@@ -1232,6 +1352,7 @@ position: absolute;
 
   .policy, .privacy {
     font-size: 1.5rem;
+
     .title {
       font-size: 2.375rem;
     }
@@ -1243,35 +1364,43 @@ position: absolute;
         font-size: 1.5rem;
       }
     }
+
     .form-coin {
       .form-btn {
         .payment-btn {
           font-size: 1rem;
         }
+
         .item {
           margin-bottom: 15px;
         }
       }
+
       .btn-dark {
         font-size: 1.5rem;
         padding: 10px;
       }
+
       .item {
         margin-bottom: .5rem;
+
         .number {
           width: 2.25rem;
           height: 2.25rem;
           font-size: 1.75rem;
         }
+
         .step-icon {
           width: 4.125rem;
           height: 4.125rem;
         }
       }
+
       .form-group {
         label {
           font-size: 16px;
         }
+
         .form-control {
           padding: 10px;
           font-size: 22px;
@@ -1283,17 +1412,13 @@ position: absolute;
 
   footer {
     font-size: 16px;
+
     .social-links {
       > li {
-        > a{
+        > a {
           width: 40px;
           height: 40px;
         }
-      }
-    }
-    .copyright {
-      img {
-        width: 25%;
       }
     }
   }
@@ -1323,9 +1448,11 @@ position: absolute;
     .main-banner-text {
       font-size: 2rem;
     }
+
     .title {
       font-size: 1.2rem;
     }
+
     .desc {
       font-size: 1rem;
     }
@@ -1334,6 +1461,7 @@ position: absolute;
     .desc {
       font-size: 1rem;
     }
+
     .btn-primary {
       font-size: 16px;
       padding: 15px 20px;
@@ -1345,10 +1473,12 @@ position: absolute;
         font-size: 1.5rem;
         margin-bottom: 15px;
       }
+
       .desc {
         font-size: 1.2rem;
       }
     }
+
     .item {
       .border-wrapper {
         .title-box {
@@ -1359,6 +1489,7 @@ position: absolute;
   }
   .team .item {
     font-size: 30px;
+
     .tg-link {
 
       font-size: 14px;
@@ -1368,15 +1499,18 @@ position: absolute;
     .item {
       font-size: 1.2rem;
     }
+
     .stat {
       .desc {
         font-size: 2rem;
       }
     }
+
     .connection {
       .title {
         font-size: 2.5rem;
       }
+
       .desc {
         font-size: 1.5rem;
       }
@@ -1386,22 +1520,27 @@ position: absolute;
   .pricing {
     .pricing-item {
       min-height: 495px;
+
       .item {
         padding: 20px 15px 0 15px;
+
         .title {
           font-size: 1.2rem;
         }
+
         .parametrs {
           font-size: 14px;
           padding-left: 15px;
         }
       }
+
       .img {
         .price {
           font-size: 1.2rem;
         }
       }
     }
+
     .btn-dark {
       font-size: 1rem;
       padding: 15px 30px;
@@ -1412,16 +1551,20 @@ position: absolute;
     .title {
       font-size: 2rem;
     }
+
     .card {
       .btn-link {
         font-size: 1.5rem;
         padding: 15px;
       }
+
       .name {
         padding: 0 20px;
       }
+
       .card-body {
         font-size: 1rem;
+
         .number, .title {
           font-size: 2rem;
         }
@@ -1434,9 +1577,11 @@ position: absolute;
       li {
         font-size: 2rem;
       }
+
       span {
         flex: 0 0 auto;
       }
+
       &:before {
         bottom: 20%;
       }
@@ -1445,6 +1590,7 @@ position: absolute;
 
   .policy, .privacy {
     font-size: 1.5rem;
+
     .title {
       font-size: 2.375rem;
     }
@@ -1456,35 +1602,43 @@ position: absolute;
         font-size: 1.5rem;
       }
     }
+
     .form-coin {
       .form-btn {
         .payment-btn {
           font-size: 1rem;
         }
+
         .item {
           margin-bottom: 15px;
         }
       }
+
       .btn-dark {
         font-size: 1.5rem;
         padding: 10px;
       }
+
       .item {
         margin-bottom: .5rem;
+
         .number {
           width: 2.25rem;
           height: 2.25rem;
           font-size: 1.75rem;
         }
+
         .step-icon {
           width: 4.125rem;
           height: 4.125rem;
         }
       }
+
       .form-group {
         label {
           font-size: 16px;
         }
+
         .form-control {
           padding: 10px;
           font-size: 22px;
@@ -1496,19 +1650,22 @@ position: absolute;
 
   footer {
     font-size: 16px;
+
     .social-links {
       > li {
-        > a{
+        > a {
           width: 40px;
           height: 40px;
         }
       }
     }
-    .copyright {
+
+
+  }
+}
+
+.copyright {
       img {
-        width: 25%;
+        max-height: 100px !important;
       }
     }
-  }
-
-}
