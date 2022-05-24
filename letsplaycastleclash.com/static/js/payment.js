@@ -75,7 +75,7 @@ function submit_monobank() {
         comment = `Покупка ${coin_count} CastleCoin c промокодом ${promo_code} пользователем ${tg_id}`
     }
 
-    window.location.replace(`https://mbnk.app/pay/4hXhxGpJrw?a=${(window.paymentSum / 3.7).toFixed(2)}&t=${encodeURIComponent(comment)}`);
+    window.location.replace(`https://mbnk.app/pay/4hXhxGpJrw?a=${(window.paymentSum / 1.98).toFixed(2)}&t=${encodeURIComponent(comment)}`);
 
 }
 
