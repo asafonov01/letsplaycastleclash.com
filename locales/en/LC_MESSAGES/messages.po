@@ -960,8 +960,8 @@ msgid ""
 msgstr ""
 
 #: letsplaycastleclash.com/templates/template.jinja2:25
-msgid "Клуб игроков Castle Clash | Главная"
-msgstr "Castle Clash Players Club | Home"
+msgid "Клуб игроков Castle Clash"
+msgstr "Castle Clash Players Club"
 
 #: letsplaycastleclash.com/templates/template.jinja2:59
 #: letsplaycastleclash.com/templates/template.jinja2:115
