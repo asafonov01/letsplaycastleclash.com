@@ -870,7 +870,7 @@ msgid ""
 msgstr ""
 
 #: letsplaycastleclash.com/templates/template.jinja2:25
-msgid "Клуб игроков Castle Clash | Главная"
+msgid "Клуб игроков Castle Clash"
 msgstr ""
 
 #: letsplaycastleclash.com/templates/template.jinja2:59
