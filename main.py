@@ -73,6 +73,7 @@ routes.static('/static', 'letsplaycastleclash.com/static')
 
 if __name__ == '__main__':
     app = web.Application(middlewares=[locale_middleware])
+
     # logging.basicConfig(level=logging.DEBUG)
 
     app.add_routes(routes)
