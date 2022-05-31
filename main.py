@@ -1,81 +1,16 @@
-import logging
+# This is a sample Python script.
 
-import aiohttp_jinja2
-import jinja2
-from aiohttp import web
-from aiohttp.web_request import BaseRequest
-from babel.core import Locale, UnknownLocaleError
-from babel.support import Translations
-from aiohttp.web import middleware
-
-routes = web.RouteTableDef()
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-@middleware
-async def locale_middleware(request, handler):
-    _code = request.cookies.get('locale', False)
-    if not _code:
-        locale_code = request.headers.get('ACCEPT-LANGUAGE', 'en')[:2]
-        try:
-            _code = str(Locale.parse(locale_code, sep='-'))
-        except (ValueError, UnknownLocaleError):
-            logging.debug(f'Invalid locale: {_code}')
-            pass
-
-    translations = Translations.load('locales', _code or 'en')
-    request['lang'] = _code
-
-    jinja_environment = aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('./letsplaycastleclash.com/templates'),
-                                             enable_async=True, extensions=['jinja2.ext.i18n'])
-    jinja_environment.install_gettext_translations(translations)
-
-    resp = await handler(request)
-    return resp
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-@routes.get('/')
-@routes.get('/index')
-@aiohttp_jinja2.template('index.jinja2')
-async def index(request: BaseRequest):
-    return {'lang': request['lang']}
-
-
-@routes.get('/faq')
-@aiohttp_jinja2.template('faq.jinja2')
-async def faq(request: BaseRequest):
-    return {'lang': request['lang']}
-
-
-@routes.get('/payment')
-@aiohttp_jinja2.template('payment.jinja2')
-async def payment(request: BaseRequest):
-    return {
-        'tg_id': request.rel_url.query.get('tg_id') or '',
-        'count': request.rel_url.query.get('count') or 100,
-        'lang': request['lang']
-
-    }
-
-
-@routes.get('/policy')
-@aiohttp_jinja2.template('policy.jinja2')
-async def policy(request: BaseRequest):
-    return {'lang': request['lang']}
-
-
-@routes.get('/privacy')
-@aiohttp_jinja2.template('privacy.jinja2')
-async def privacy(request: BaseRequest):
-    return {'lang': request['lang']}
-
-
-routes.static('/static', 'letsplaycastleclash.com/static')
-
+# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    app = web.Application(middlewares=[locale_middleware])
+    print_hi('PyCharm')
 
-    # logging.basicConfig(level=logging.DEBUG)
-
-    app.add_routes(routes)
-
-    web.run_app(app, port=8055)
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
